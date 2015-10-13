@@ -6,3 +6,6 @@ I will attepmt to complete all of the assignments using python instead of MATLAB
 
 ## Weighted Majority Algorithms
 The first assignment was to program a weigted majority algorithm (WMA) and a randomized weighted majority algorithm (RWMA) and show the differences.  
+
+## Multi-Armed Bandits
+The second assignment looks at algorithms like Generalized Weighted Majority (GWM), EXP3, and UCB on different games.
