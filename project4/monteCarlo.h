@@ -5,6 +5,7 @@
 #include <random>
 #include "opencv2/core/core.hpp"
 #include "opencv2/highgui/highgui.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
 // #include <opencv2/core/eigen.hpp>	
 
 using namespace std;
@@ -26,6 +27,7 @@ class MonteCarlo {
 		int 		cmPerCell;
 		int 		mapW;
 		int 		mapH;
+		int  		imageCount = 0;
 		double		eps;
 		MatrixXd 	map;
 		MatrixXd	particles;
@@ -46,6 +48,7 @@ class MonteCarlo {
 		void		constructLUT();
 		void		loadLUT(string file);
 		double		getRange(int y, int x, double t);
-		vector<vector<int> > bresenhamLine(int x0, int y0, int x1, int y1);
+		int 		bresenhamLine(int x0, int y0, int x1, int y1, vector<vector<int> > &line);
+		void 		drawRange(const Vector3d &state, float angle, float range);
 };
 
